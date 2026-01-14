@@ -1,6 +1,7 @@
 Set-ExecutionPolicy Bypass -Scope Process
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
-choco install googlechrome
-choco install adobereader
+choco install googlechrome -y
+choco install adobereader -y
 Invoke-WebRequest "https://get.teamviewer.com/6kyy3pe" -OutFile "c:\users\%username%\desktop\Netip Support.exe"
+
