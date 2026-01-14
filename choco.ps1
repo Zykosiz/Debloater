@@ -4,3 +4,5 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco feature enable -n=allowGlobalConfirmation
 choco install googlechrome --checksum64 -y
 choco install adobereader -y
+Invoke-WebRequest "https://get.teamviewer.com/6kyy3pe" -OutFile "$env:userprofile\desktop\netip.exe"
+
