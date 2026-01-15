@@ -9,7 +9,7 @@ winget install -e --id Adobe.Acrobat.Reader.64-bit --accept-source-agreements
 winget install -e --id Lenovo.Vantage --accept-source-agreements
 $DownloadUrl = 'https://get.teamviewer.com/6nsd5xz'
 $Filename = $DownloadUrl | Split-Path -Leaf
-$DownloadPath = "$env:userprofile\desktop\Netip Support.exe"
+$DownloadPath = "$env:userprofile\desktop"
 $WebClient = New-Object Net.WebClient
 $WebClient.DownloadFile($DownloadUrl, $DownloadPath)
 Import-Module -Name PSWindowsUpdate
@@ -22,4 +22,5 @@ Restart-Computer -Force
 #choco install googlechrome --ignore-checksums
 #Invoke-WebRequest "https://get.teamviewer.com/6nsd5xz" -OutFile "C:\Temp\Netip.exe"
 #Move-Item -Path "C:\Temp\Netip.exe" -Destination ""$env:userprofile\desktop\netip.exe"" -Force
+
 
